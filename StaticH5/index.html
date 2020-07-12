@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="./img/logo.ico" rel="shortcut icon">
+    <title>综合办公下载</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    div {
+        margin: 0;
+        padding: 0;
+        font-family: PingFang SC;
+    }
+
+    .customizedVersion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: .36rem;
+        color: #000;
+        margin: .2rem 0;
+    }
+
+    .banner {
+        width: 100%;
+        background-size: 100% auto;
+        background-image: url("/img/h5bannerx.png");
+        background-repeat: no-repeat;
+        margin-bottom: 6%;
+    }
+
+    .banner .conten {
+        padding-left: 8%;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+        height: 3rem;
+
+
+    }
+
+    .banner .conten .one {
+        font-size: .34rem;
+        color: #4e507c;
+        margin-bottom: .22rem;
+
+    }
+
+    .banner .conten .two {
+        margin-bottom: .15rem;
+        font-size: .2rem;
+        color: #7d7e9f;
+    }
+
+    .banner .conten .three {
+        font-size: .2rem;
+        color: #7d7e9f;
+    }
+
+    .android {
+        /* margin: .52rem 0 .48rem; */
+        padding: .36rem 0;
+        text-align: center;
+        box-shadow: 0 0 3px 3px #f7f7f7;
+        width: 4rem;
+        margin-bottom: 6%;
+
+    }
+
+    .android img {
+        width: 60%;
+    }
+    .android .for {
+        color: #666666;
+        font-size: .2rem;
+
+    }
+    .down {
+        font-size: .26rem;
+        color: #333333;
+        text-align: center;
+        letter-spacing: .025rem;
+    }
+</style>
+
+<body>
+    <div class="customizedVersion">
+        <div class="title">综合办公下载</div>
+        <div class="banner">
+            <div class="conten">
+                <span class="one">新一代政务办公方式</span>
+                <span class="two">电脑端访问地址</span>
+                <span class="three">https://zhbg1.zhtchina.net:7065/</span>
+            </div>
+        </div>
+        <div class="android">
+            <img src="./img/andro.png" />
+            <div class="down">安卓扫码 / 识别下载</div>
+            <div class="for">（下载密码：000）</div>
+
+        </div>
+        <div class="android">
+            <img src="./img/ios.png" />
+            <div class="down">ios端扫码 / 识别下载</div>
+        </div>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    //Rem
+    (function (win, doc) {
+        if (!win.addEventListener) return;
+        var html = document.documentElement;
+        function setFont() {
+            var cliWidth = html.clientWidth;
+            if (cliWidth > 750) {
+                cliWidth = 750;
+            }
+            html.style.fontSize = 100 * (cliWidth / 750) + 'px';
+        }
+
+        win.addEventListener('resize', setFont, false)
+        doc.addEventListener('DOMContentLoaded', setFont, false)
+    })(window, document);
+
+</script>
+
+</html>

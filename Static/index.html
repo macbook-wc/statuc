@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>综合办公下载</title>
+    <link href="./img/WechatIMG930.jpeg" rel="shortcut icon">
+
+    <style>
+        body {
+            margin: 0 auto;
+            font-size: 16px;
+        }
+
+        .box {
+            overflow-y: hidden;
+        }
+
+        .banner {
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-image: url("./img/banner.png");
+            padding-bottom: 5%;
+        }
+
+        .banner .content {
+            padding-left: 12%;
+        }
+
+        .banner .content .one {
+            font-size: 46px;
+            padding-top: 7%;
+            color: #4e507c;
+        }
+
+        .banner .content .two {
+            font-size: 32px;
+            padding: 2% 0 2% 0;
+            color: #7d7e9f;
+        }
+
+        .banner .content .three {
+            font-size: 18px;
+            color: #ffffff;
+            width: 160px;
+            height: 50px;
+            background-color: #2f8ff0;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        .banner .content .three .a {
+            font-size: 18px;
+            color: #ffffff;
+            text-decoration: none
+        }
+
+        .title {
+            font-size: 28px;
+            color: #111111;
+            text-align: center;
+            padding: 2% 0;
+        }
+
+        .pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pic .picOne {
+            box-shadow: 0 0 3px 4px #f7f7f7;
+            padding: 2% 4%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 40px;
+            border: 1.5px solid #f7f7f7;
+        }
+
+        .pic .picOne .andPic {
+            width: 214px;
+            height: 214px;
+        }
+
+        .pic .picOne .load {
+            padding: 6% 0;
+        }
+
+        .pic .picTwo {
+            box-shadow: 0 0 3px 4px #f7f7f7;
+            padding: 2% 4%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 40px;
+            border: 1.5px solid #f7f7f7;
+
+        }
+
+        .pic .picTwo .iosPic {
+            width: 214px;
+            height: 214px;
+        }
+
+        .pic .picTwo .load {
+            padding: 6% 0;
+        }
+    </style>
+
+</head>
+
+<body onload="load()">
+    <div class="box">
+        <div class="banner">
+            <div class="content">
+                <div class="one">综合办公下载</div>
+                <div class="two">新一代政务办公方式</div>
+                <div class="three">
+                    <a class="a" href="https://zhbg1.zhtchina.net:7065" target="_blank">登录web端 </a>
+                    <!-- http:120.131.4.6:7065 -->
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            综合办公移动端下载
+        </div>
+        <div class="pic">
+            <div class="picOne">
+                <img class="andPic" src="./img/andro.png" alt="">
+                <span class="load">请使用手机扫描二维码下载</span>
+                <span >安卓扫码下载</span>
+                <span style="color:#666666;font-size:12px; padding-top: 10px;">（下载密码：000）</span>
+            </div>
+            <div class="picTwo">
+                <img class="iosPic" src="./img/ios.png" alt="">
+                <span class="load" class="">请使用手机扫描二维码下载</span>
+                <span >IOS扫码下载</span>
+                <span style="height: 27px; width: 1px;"></span>
+
+            </div>
+        </div>
+
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script> -->
+<script>
+    function load() {//用window的onload事件，窗体加载完毕的时
+        // if (new RegExp("/Android|webOS|iPhone|iPod|BlackBerry/i").test(navigator.userAgent)) {
+        //     window.location.href = "http://39.96.116.222:7023/index.html";
+        // }
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        var bIsWX = sUserAgent.match(/MicroMessenger/i) == "micromessenger";
+
+        if (bIsWX || bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            window.location.href = "http://39.96.116.222:7023/index.html";
+        }
+    }
+</script>
+
+</html>　
